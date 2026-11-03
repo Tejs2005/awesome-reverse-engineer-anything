@@ -41,4 +41,11 @@
 | Firefighter（X）                                                                             | —                                  | 转述记录                                | **不是 REA。** 标注为 AI 逆向。                                                         |
 | 《现代战争 2》反编译（X）                                                                             | —                                  | 转述记录                                | **不是 REA。** 标注为 AI 逆向。                                                         |
 
+| [quicken-2002-dumper](https://github.com/bitwisecook/quicken-2002-dumper)                  | 是                                  | —                                   | **已确认。** README 写明二进制分析由 `reverse-engineer-anything` 加 AI 辅助完成。                |
+| [screenstudio-rea-research](https://github.com/Royo-Qiao/screenstudio-rea-research)        | 是                                  | —                                   | **已确认。** 仓库名和 README 都写明 REA，研究自述以证据为导向。                                       |
+| [i-asset-extraction](https://github.com/4163/i-asset-extraction)                           | 是                                  | —                                   | **已确认。** README 要求安装 `rea-agents` 并注册 MCP 服务器，提取通过 REA 工具完成。                   |
+| [gls-modern-web](https://github.com/tlriisoe23/gls-modern-web)                             | 是                                  | —                                   | **已确认。** README 写明重建依据是对原版的 REA 档案分析。                                          |
+| [universal-seo-agent-suite](https://github.com/Omi811/universal-seo-agent-suite)           | 是                                  | —                                   | **已确认。** README 写明使用 REA（morluto/rea）6.7.0 分析 claude-seo。                      |
+| [pccc24-wp](https://github.com/HienPhuong99/pccc24-wp)                                     | 是                                  | —                                   | **已确认。** 越南语 README 写明在转换为 WordPress 前用 `rea-agents` 逆向了该网站。                    |
+
 如果你发现这里有错误的案例，请使用案例表单提交 Issue。

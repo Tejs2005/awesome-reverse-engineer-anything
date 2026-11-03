@@ -119,6 +119,12 @@
 - [E2-Veera/calendar-reconstruction](https://github.com/E2-Veera/calendar-reconstruction) - `REA` 用 Swift/SwiftUI 复刻 macOS 日历的概念验证：月、周、日、年视图，事件、多日历和搜索。行为依据来自对 Calendar.app 的 REA 分析（rea-agents 6.5.0），摘要在 `evidence/rea/`。README 说明不含苹果的代码和素材，也没有提交提取出的资源文件。No license file。
 - [soyrochus/mucrab](https://github.com/soyrochus/mucrab) - `REA（部分）` 把 muCommander 的文件管理功能（本地、ZIP、SFTP 浏览，复制、搜索、查看器、标签页）从已发布的 Java 二进制移植到 Rust。固定版本的 REA 6.5.0 负责清点 JAR 内容、核对类指纹；方法还原用的是 CFR 和 `javap`，不是 REA。实验性。GPL-3.0。
 - [devtechedge/feature-heist](https://github.com/devtechedge/feature-heist) - `REA` 把 REA 的分析输出变成单个功能的净室 TypeScript 重写，并逐一和原版对照测试：MIT 许可的 Electron 应用里的 Markdown 切换、从字节码还原的 WETH9 合约、从 HAR 抓包还原的 npm 搜索客户端、从 .NET 程序集还原的 Humanizer 数字转英文，以及经 Ghidra 从原生 ELF 还原的一个函数。REA 证据会存档并记录哈希，每个重写都有差分测试。MIT。
+- [bitwisecook/quicken-2002-dumper](https://github.com/bitwisecook/quicken-2002-dumper) - `REA` Quicken 2002 的 QDF v3 老账本格式的类型化 Python 读取器：导出规范化的账目表和包含原始字节、页与记录的完整 SQLite 归档。README 写明二进制分析由 `reverse-engineer-anything` 加 AI 辅助完成，格式说明记录了依据证据和还原结论的局限。Unlicense。
+- [Royo-Qiao/screenstudio-rea-research](https://github.com/Royo-Qiao/screenstudio-rea-research) - `REA` 只读检查工具加一份以证据为导向的案例研究，对象是 Apple Silicon 上的 Screen Studio 3.7.3-4540：检查 Electron 包、在不接触键盘输入的前提下统计原生录制事件、验证导出视频可完整解码。MIT。
+- [tlriisoe23/gls-modern-web](https://github.com/tlriisoe23/gls-modern-web) - `REA` 把 GolfSoft Golf League Secretary v9.954（VB6 可执行文件、FarPoint Spread ActiveX 表格和 Jet 3.5 数据库）clean-room 重写为现代 Web 应用，依据是对原版的 REA 档案分析：FastAPI、SQLite WAL 加多主题工作区界面。实验性。仓库未附许可证。
+- [Omi811/universal-seo-agent-suite](https://github.com/Omi811/universal-seo-agent-suite) - `REA` 面向 Google Antigravity、OpenAI Codex 和 Claude Code 的多平台 SEO 与 AI 搜索（GEO）Agent 套件，用 REA 6.7.0 逆向 AgriciDaniel/claude-seo 后重建。MIT。
+- [HienPhuong99/pccc24-wp](https://github.com/HienPhuong99/pccc24-wp) - `REA` 🇻🇳 用 rea-agents 完整逆向 pccc24.com 网站（CodeIgniter 4 + React），再 100% 转换为 WordPress，含自定义插件和主题、自动迁移脚本和 Playwright E2E 测试。有公开演示。仓库未附许可证。
+- [4163/i-asset-extraction](https://github.com/4163/i-asset-extraction) - `REA` 用 REA 做有范围、可复现的游戏资产提取、归类和可视化规格的 Agent 流水线与工作区，附带示例和社区提取结果。MIT。
 
 ### 硬件、协议与驱动
 
@@ -138,6 +144,7 @@
 - [Junhan2/reaproof](https://github.com/Junhan2/reaproof) - `AI 逆向` 评估你发布的应用对 REA 这类 Agent 暴露到什么程度，并修掉能修的部分：带着原始源码的 source map、服务端密钥、`.env` 的值、混进构建产物的 `.git` 目录。用自带的 "rea risk" 等级给出结论，并在 22 个框架测试应用上用 `aapt`、`dexdump`、`readelf`、`otool`、`@electron/fuses` 交叉核对计数。MIT。
 - [MockirDev/antirea](https://github.com/MockirDev/antirea) - `AI 逆向` 防守方的工具：在 Agent 最先读取的指令文件里放"停止"指令，再加终端 shim 和构建加固。只对遵守这些文件的 Agent 有效，README 没有给出实测数据。MIT。
 - [qybaihe/bla](https://github.com/qybaihe/bla) - `REA` 针对 REA 的防护加固，用于你自己发布的产物：植入诱饵，把产物推过 REA 文档里写明的资源上限，同时保持运行行为不变。README 把用真实 REA 跑出的结果（ASAR、WASM、Go、EVM、PCAP、SQLite、模型文件等格式触发容量或预算错误）和基准测试里的 token 与费用数字分开写明，后者是内部估算。基于 Ghidra 的路径没有测试。MIT。
+- [davepartner/anti-reverse-engineer-anything](https://github.com/davepartner/anti-reverse-engineer-anything) - `AI 逆向` 防守方工具箱，面向发布闭源软件的人：混淆、反调试、反 Frida 和 source map 加固，目标是让 REA 及其依赖的工具（Ghidra、Hopper、IDA、Frida、LLDB、CDP）碰壁，让 Agent 返回"无法判断"而不是能用的克隆。MIT。
 
 ## 同一波浪潮：未写明使用 REA 的 AI 逆向项目
 
@@ -172,6 +179,13 @@
 - [kandada/rea-python](https://github.com/kandada/rea-python) - `AI 逆向` REA 的非官方 Python 移植，作者因为自家 Python 语言的 Agent 产品需要原生集成而写。上游作者未背书。MIT。
 - [Fractal-Tess/rea-flake](https://github.com/Fractal-Tess/rea-flake) - `AI 逆向` 打包成 Nix 包的 REA。MIT。
 - [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) - `AI 逆向` MCP Server、操作手册和 Agent Skill，让编码 Agent 给单机游戏加上联机合作：先找现成的联机 Mod，必要时逆向游戏，用机器人测试，再打包到 Steam 上和朋友一起玩。建议搭配 REA、GhidraMCP 或 ida-pro-mcp 等逆向 MCP。每位玩家都要有自己的正版游戏，不涉及反作弊和在线服务。MIT。
+- [mladicstefan/rea-harness](https://github.com/mladicstefan/rea-harness) - `AI 逆向` Docker 沙盒：Pi 编码 Agent + REA + Chrome DevTools MCP + obra/superpowers Skill 共享一个无头 Chromium，模型用宿主机上的 OpenAI 兼容本地 LLM（附 ik_llama.cpp 启动脚本，32k 到 256k 上下文）。仓库未附许可证。
+- [HarunaTyan/dsh-rea-dispatcher](https://github.com/HarunaTyan/dsh-rea-dispatcher) - `AI 逆向` DeepSeek Harness 插件，把 REA 的 207 个工具折叠成 3 条命令（含领域入口为 9 条），挂载面从约 19 万 token 降到约 1.3k，支持离线重算 token 成本。MIT。
+- [liaoli-hero/dsh-rea](https://github.com/liaoli-hero/dsh-rea) - `AI 逆向` 非官方 DeepSeek Harness 桥接插件，注册 `rea_list`、`rea_cli`、`rea_tool` 三个按需调用的工具，用于在会话中发现并调用 REA。仓库未附许可证。
+- [lalbers/agent-sandbox](https://github.com/lalbers/agent-sandbox) - `AI 逆向` `sbx` 在无 root 的 Podman 里运行 Claude Code 和 REA（`--vm` 时用 libkrun microVM），用于分析不可信二进制，带出口代理。MIT。
+- [Dasharatha21/rea-termux-antigravity](https://github.com/Dasharatha21/rea-termux-antigravity) - `AI 逆向` 一键套件，把 Android 手机（Termux，ARM64）变成 REA + Antigravity CLI 的逆向工作站，走 stdio MCP。MIT。
+- [ahmedmetered/anyrea](https://github.com/ahmedmetered/anyrea) - `AI 逆向` 让你手头已有的 Agent 跑起 REA 的安装桥：通用 MCP 桥接和面向 Agent 的安装方式，覆盖官方安装器拒绝的客户端和 Node 版本。MIT。
+- [Rehanasharmin/REA-optimized-for-arena-agent](https://github.com/Rehanasharmin/REA-optimized-for-arena-agent) - `AI 逆向` 面向无头 Agent 的 REA 一次性沙盒版：一条命令完成引导，附带机器校验的能力验证器。作为上游的下游分支持续维护。MIT。
 
 ## 教程与深度调研
 
@@ -187,6 +201,7 @@
 - [inematds/rea-engenharia-reversa](https://github.com/inematds/rea-engenharia-reversa) - 🇧🇷 有葡语、英语和西语三个版本的 REA 指南，包含链接、案例、客观评估和实际测试。
 - [ZooHero500/reatool](https://github.com/ZooHero500/reatool) - 非官方的 REA 教程与对比，讲如何在编码 Agent 中安装和使用。与 morluto 无关。
 - [JoasASantos/REA-Prompts](https://github.com/JoasASantos/REA-Prompts) - REA 提示词合集，覆盖原生二进制、固件、游戏、Android、Electron 和网站。其中的复刻类提示词按 clean-room 方式写，授权和破解研究类提示词只要求记录分析结果，不做绕过。MIT。
+- [clarkfaint/hermes-agent-rea-lab](https://github.com/clarkfaint/hermes-agent-rea-lab) - 自托管实验记录：在 Proxmox 虚拟机部署 Nous Research 的 Hermes Agent，把 REA 以 MCP 接入并把 229 个工具裁剪到 26 个静态分析工具，完成第一次 SBOM 练习。MIT。
 
 ## 相关 MCP 逆向工具
 
